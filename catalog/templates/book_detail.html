@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Book Detail:  {{ book.title }}</h1>
+    <ul>
+        <li>Author : {{book.author}}</li>
+        <li>Summary: {{book.summary}}</li>
+        <li>ISBN: {{book.summary}}</li>
+        <li>Genre: {{book.genre.all|join:", "}}</li>
+    </ul>
+
+
+{% endblock %}
+
